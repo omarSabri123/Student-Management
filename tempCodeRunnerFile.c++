@@ -33,7 +33,7 @@ public:
 
         num++;
     }
-
+    //The print function is responsible for printing data.
     void print(Student ob1[], int size) {
         for (int x = 0; x < size; x++) {
             double Average = (ob1[x].grade1 + ob1[x].grade2 + ob1[x].grade3) / 3.0;
@@ -47,7 +47,7 @@ public:
             cout << "Average grades: " << Average << endl;
         }
     }
-
+    //The Excellencestudents function can be used to identify students who have received an excellence award.
     void Excellencestudents(Student ob1[], int size) {
         cout << "\nStudents with excellent grades:\n";
         bool foundExcellent = false;
@@ -62,7 +62,7 @@ public:
             cout << "No students with excellent grades.\n";
         }
     }
-
+    //Search function that can be used to search for any student's data
     void Search(Student ob1[], int size) {
         int codes;
         cout << "\nSearch engine (type 0 to exit)\n";
@@ -94,6 +94,7 @@ public:
 
         } while (codes != 0);
     }
+    //Delete function, through which you can delete any student’s data
     void Delete (Student ob1[], int size)
     {
         int code ;
@@ -135,6 +136,7 @@ public:
           cout << "❌ Student with ID " << code << " not found.\n";
           }while(true);
     }
+    //Edit function that allows you to modify any student's data
     void Edit(Student ob1[], int size)
     {
         int IDI ;
